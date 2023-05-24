@@ -1,0 +1,34 @@
+metal:
+  children:
+    masters:
+      hosts:
+        luigi:
+          {
+            ansible_host: 10.0.50.126,
+            mac: "6c:4b:90:60:29:c4",
+            disk: sda,
+            network_interface: eno1,
+          }
+        peach:
+          {
+            ansible_host: 10.0.50.127,
+            mac: "6c:4b:90:5f:8e:43",
+            disk: sda,
+            network_interface: eno1,
+          }
+        toad:
+          {
+            ansible_host: 10.0.50.128,
+            mac: "6c:4b:90:5b:a3:56",
+            disk: sda,
+            network_interface: eno1,
+          }
+    workers:
+      hosts:
+        yoshi:
+          {
+            ansible_host: 10.0.50.129,
+            mac: "6c:4b:90:5b:6e:6d",
+            disk: sda,
+            network_interface: eno1,
+          }

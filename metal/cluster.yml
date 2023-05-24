@@ -1,0 +1,6 @@
+- name: Create Kubernetes cluster
+  hosts: metal
+  roles:
+    - k3s
+    - automatic_upgrade
+    - nfs_utils
